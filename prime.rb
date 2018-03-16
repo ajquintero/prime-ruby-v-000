@@ -7,5 +7,5 @@ def prime?(int)
       int % some_factor == 0
     end
   end
-  true
+  
 end
