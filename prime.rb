@@ -1,11 +1,11 @@
 # Add  code here!
 def prime?(int)
-  (2..int).each do |has_divisor|
-    if int % has_divisor == 0
-      return false
+  if int < 0 || int == 0 || int == 1
+    return false
+  else
+    (2..int-1).to_a.any? do |some_factor|
+      int % some_factor == 0
     end
-    true
-  end
   # if int < 0 || int == 0 || int = 1
   #   return false
   #
