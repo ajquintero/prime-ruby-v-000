@@ -4,8 +4,8 @@ def prime?(int)
     return false
   else
     (2..int-1).to_a.any? do |some_factor|
-      int % some_factor == 0
+      int % some_factor != 0
     end
   end
-  
+
 end
